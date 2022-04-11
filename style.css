@@ -1,0 +1,90 @@
+:root{
+    --color:hsl(228, 45%, 44%);
+    --White: hsl(0, 0%, 100%);
+    --Lightgray: hsl(212, 45%, 89%);
+    --Grayishblue: hsl(220, 15%, 55%);
+    --Darkblue: hsl(218, 44%, 22%);
+    --font:'Outfit', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 11px; 
+    text-align: center;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--Grayishblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.containner{
+    background-color: var(--White);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 25px var(--Grayishblue);
+    height: 50%;
+    width: 15%;
+}
+.containner .image{
+    border-radius: 20px;
+    height: 60%;
+    width: 100%;
+
+}
+.containner .image img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+.containner .content{
+    height: 35%;
+    width: 100%;
+    font-family: var(--font);
+}
+.containner .content h3{
+    font-weight: 700;
+    color: var(--Darkblue);
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+.containner .content p{
+    font-size: 15px;
+    color: var(--Grayishblue);
+    font-weight: 400;
+}
+.attribution a{
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 14px;
+    color: var(--color);
+    cursor: pointer;
+}
+.attribution{
+    position: absolute;
+    bottom: 5%;
+    font-family: var(--font);
+    font-size: 14px;
+}
+
+@media screen and (min-width:1440px){
+    .containner{
+        height: 55%;
+        width: 20%;
+    }
+}
+@media screen and (max-width:375px){
+    .containner{
+        width: 80%;
+        height: 60%;
+    }
+}
